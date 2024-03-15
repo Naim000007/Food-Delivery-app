@@ -1,12 +1,12 @@
 
 import './App.css'
-
+import {AnimatePresence} from 'framer-motion'
 import { Route, Routes } from 'react-router-dom'
 import { MainContainer, CreateContainer,Header } from './Connection';
 function App() {
 
   return (
-    <>
+    <AnimatePresence>
     <div className='w-screen h-auto flex flex-col bg-primary'>
       <Header/>
       <main className='mt-24 p-8 w-full'>
@@ -17,7 +17,7 @@ function App() {
         </Routes>
       </main>
     </div>
-    </>
+    </AnimatePresence>
   )
 }
 
