@@ -1,12 +1,16 @@
 
 import './App.css'
+import Header from './Components/Header/Header'
 
 function App() {
 
 
   return (
     <>
-    <h1 className='w-screen h-screen flex items-center justify-center text-blue-600'>Hello World</h1>
+    <div className='w-screen h-auto flex-col'>
+      <Header/>
+      
+    </div>
     </>
   )
 }
