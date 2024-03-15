@@ -25,6 +25,7 @@ const Header = () => {
 
     // Function to handle login
     const login = async () => {
+       if(!user){
         try {
             const { user: { refreshToken, providerData } } = await signInWithPopup(firebaseAuth, provider);
             
@@ -40,6 +41,7 @@ const Header = () => {
                 console.error('Error occurred during login:', error);
             }
         }
+       }
     };
     
     return (
